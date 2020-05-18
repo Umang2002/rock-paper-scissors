@@ -1,0 +1,135 @@
+:root{
+    --primary-color: #003699;
+    --dark-color: #333333;
+    --light-color: #f4f4f4f4;
+    --lose-color: #dc3545;
+    --win-color: #28a745;
+    --model-duration: 1s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sofia;
+    line-height: 1.6;
+    background: black;
+    color:white;
+
+}
+
+.container{
+    max-width : 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding : 0 2rem;
+    text-align: center;
+    
+}
+.restart-btn{
+    display : none;
+    background : var(--light-color);
+    color : #333;
+    font-size : 15px;
+    padding : 0.4rem 1.3rem;
+   
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.restart-btn:hover{
+    background-color: var(--primary-color);
+    color : white;
+}
+.header{
+    text-align: center;
+    margin : 1rem 0 ;
+}
+.header h1{
+    margin-bottom: 1rem;
+}
+
+.score{
+    display: grid;
+    grid-template-columns:  repeat(2,1fr);
+    font-size : 50px;
+}
+/* .score p :first-child{
+    background-color : var(--primary-color);
+    color : white;
+
+}
+.score p :last-child{
+    background : var(--dark-color);
+    color : white;
+    
+} */
+.choices{
+    display : grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:4px;
+    margin-top : 8px;
+}
+.choice {
+    cursor: pointer;
+}
+#rock:hover{
+    background: #03e9f4;
+    color: black;
+    box-shadow: 0 0 5px #03e9f4,
+                 0 0 25px #03e9f4,
+                 0 0 50px #03e9f4,
+                 0 0 200px #03e9f4;
+  
+  
+}
+#paper:hover{
+  background: #c94c9f;
+  color:black;
+    box-shadow: 0 0 5px #c94c9f,
+                 0 0 25px #c94c9f,
+                 0 0 50px #c94c9f,
+                 0 0 200px #c94c9f;
+  
+}
+#scissors:hover{
+    background : rgb(85, 179, 81);
+    color:black;
+    box-shadow: 0 0 5px rgb(85, 179, 81),
+                 0 0 25px rgb(85, 179, 81),
+                 0 0 50px rgb(85, 179, 81),
+                 0 0 200px rgb(85, 179, 81);
+  
+
+
+}
+.text-win{
+    color : var(--win-color);
+}
+.text-lose{
+    color : var(--lose-color);
+}
+
+@media(max-width : 700px){
+    .choice{
+        font-size: 110px;
+
+    }
+}
+@media(max-width : 500px){
+    .choice{
+        font-size: 80px;
+        
+    }
+}
+
+#make {
+    margin-bottom: 50px;
+    
+}
+
+
+
