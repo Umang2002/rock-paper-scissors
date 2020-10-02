@@ -118,4 +118,6 @@ if (rand <0.34){
 
  choices.forEach(choice => choice.addEventListener("click",play));
  window.addEventListener("click",clearmodel);
+
+//comment from krish
  
